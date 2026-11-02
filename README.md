@@ -1,163 +1,49 @@
 # Health Insurance Analytics Dashboard
 
-An interactive Health Insurance Analytics Dashboard built using Microsoft Power BI to analyse policyholder demographics, insurance premiums, claims distribution, insurer performance, and regional insurance trends.
+## Abstract
 
-## Project Overview
+The Health Insurance Analytics Dashboard is an interactive business intelligence project developed using Microsoft Power BI. It analyses a synthetic Indian health insurance dataset to provide an overview of policyholders, premium revenue, insurance claims, and insurer performance. The dashboard presents key metrics and visualisations that help users explore policy distribution and claims patterns across states, insurers, and policy types. Data is prepared and analysed using Power Query, the Power BI data model, and DAX.
 
-The Health Insurance Analytics Dashboard transforms insurance data into meaningful business insights through interactive visualisations and key performance indicators.
+## Technology Stack
 
-The project focuses on understanding policyholder distribution, premium revenue, claim amounts, claim statuses, and insurance policy performance across different states, insurers, and policy types.
+- **Data Source:** CSV / Excel
+- **Data Visualization:** Microsoft Power BI
+- **Data Transformation:** Power Query
+- **Data Modelling and Calculations:** DAX
 
-The dashboard uses a synthetic Indian health insurance dataset containing 500 records, designed for academic and analytical demonstration purposes.
+## KPI Cards
 
-## Tech Stack
+The dashboard includes the following KPI cards:
 
-| Component | Technology |
-|---|---|
-| Business Intelligence | Microsoft Power BI |
-| Data Processing | Power Query |
-| Data Modelling | Power BI Data Model |
-| Calculations | DAX |
-| Dataset Format | CSV / Excel |
+- **Total Policyholders:** Distinct count of policy IDs.
+- **Total Premium:** Total annual premium collected.
+- **Total Claims:** Total claim amount.
+- **Average Premium:** Average annual premium per policy.
+- **Claims Filed:** Number of records where a claim was filed.
 
-## Dataset Description
+## Visualisations
 
-The project uses a synthetic health insurance dataset containing 500 records and 20 columns.
+The dashboard includes:
 
-The dataset includes information related to:
+- **Premium Revenue by Insurer:** Compares premium revenue across insurance providers.
+- **Claims Distribution by Status:** Shows the distribution of claims by status, such as approved, rejected, and under review.
+- **Policyholders by State:** Shows how policyholders are distributed across Indian states.
+- **Premium Revenue by Policy Type:** Compares premium revenue across different policy types.
 
-- Policyholder details
-- Indian names and locations
-- Insurance providers
-- Policy types
-- Annual premiums in INR
-- Sum insured amounts
-- Pre-existing medical conditions
-- Claim amounts
-- Hospital and diagnosis categories
-- Claim status
+## Interactive Filters
 
-**Note:** The dataset is artificially generated and does not contain actual policyholder records or represent real-world insurance statistics.
-
-## Repository Structure
-
-```text
-Health-Insurance-Analytics/
-│
-├── 01_Raw_Data/
-│   └── Indian_Health_Insurance_Sample_Dataset.csv
-│
-├── 02_Cleaned_Data/
-│   └── (Cleaned dataset, if applicable)
-│
-├── 03_PowerBI_Dashboard/
-│   └── Health_Insurance_Analytics_Final.pbix
-│
-├── Screenshots/
-│   └── Dashboard screenshots
-│
-└── README.md
-```
-
-## Dashboard Features
-
-### 1. Insurance Overview
-
-Provides a high-level summary of insurance performance through key metrics and visualisations.
-
-- Total Policyholders
-- Total Premium
-- Total Claims
-- Average Premium
-- Claims Filed
-- Premium Revenue by Insurer
-- Claims Distribution by Status
-- Policyholders by State
-- Premium Revenue by Policy Type
-
-### 2. Interactive Filtering
-
-The dashboard includes interactive slicers that allow users to explore insurance data based on:
+The dashboard includes slicers for:
 
 - State
-- Insurance Provider
+- Insurer
 - Policy Type
 
-These filters enable dynamic analysis of policyholders, premiums, and claims.
+These filters allow users to explore policyholder distribution, premium revenue, and claims information for selected states, insurers, and policy types.
 
-### 3. Claims Analysis
+## Data
 
-Analyses insurance claims based on their status, including:
+The project uses a dataset containing 500 synthetic health insurance records and 20 columns. The dataset includes policyholder details, locations, insurer names, policy types, annual premiums in INR, sum insured, pre-existing condition information, claim amounts, claim dates, hospitals, diagnosis categories, and claim status.
 
-- Approved
-- Rejected
-- Under Review
+## Project Note
 
-Provides insights into claim distribution and the overall claims landscape within the dataset.
-
-### 4. Insurance Provider Analysis
-
-Compares premium revenue across different insurance providers to identify differences in premium contribution.
-
-## Key Performance Indicators (KPIs)
-
-| KPI | Description |
-|---|---|
-| Total Policyholders | Distinct number of policyholders |
-| Total Premium | Sum of annual insurance premiums |
-| Total Claims | Total claim amount |
-| Average Premium | Average annual insurance premium |
-| Claims Filed | Number of records with a filed claim |
-
-## Data Preparation
-
-The data preparation workflow includes:
-
-1. Generating a synthetic Indian health insurance dataset.
-2. Importing the dataset into Power BI.
-3. Inspecting and validating the dataset.
-4. Preparing data types and columns.
-5. Creating DAX measures for analytical calculations.
-6. Designing interactive visualisations and KPI cards.
-7. Applying consistent formatting and dashboard styling.
-
-## How to Run
-
-### Prerequisites
-
-- Microsoft Power BI Desktop
-
-### Steps
-
-1. Clone this repository.
-2. Navigate to `03_PowerBI_Dashboard`.
-3. Open `Health_Insurance_Analytics_Final.pbix` using Power BI Desktop.
-4. Configure the data source if required.
-5. Refresh the dataset to explore the dashboard.
-
-## Project Objectives
-
-- Analyse health insurance policyholder distribution.
-- Understand premium revenue across insurance providers.
-- Evaluate claim amounts and claim statuses.
-- Compare insurance performance across states.
-- Identify premium distribution across different policy types.
-- Build an interactive business intelligence dashboard for insurance data analysis.
-
-## Data Disclaimer
-
-This project uses entirely synthetic data generated for educational and demonstration purposes. The dataset does not represent actual insurance companies, policyholders, medical records, claims, or industry statistics.
-
-All names, providers, and figures are illustrative.
-
-## Author
-
-**Nivas I**
-
-BE Computer Science and Engineering
-
-KCG College of Technology
-
----
-
-*Health Insurance Analytics Dashboard — Turning Insurance Data into Meaningful Insights.*
+The dataset is synthetic demonstration data created for analytics and dashboard development. Names, insurers, policy details, and figures are illustrative and should not be interpreted as actual insurance industry or policyholder data.
